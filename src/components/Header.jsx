@@ -8,11 +8,11 @@ const Header = () => {
         <img
           className='header__img'
           src='../assets/images/logo-platzi-video-BW2.png'
-          alt='Platzi Video'
+          alt='Platzi Video..'
         />
         <div className='header__menu'>
           <div className='header__menu--profile'>
-            <img src='../assets/images/user-icon.png' alt='' />
+            <img src='../assets/images/user-icon.png' alt='user..' />
             <p>Perfil</p>
           </div>
           <ul>
