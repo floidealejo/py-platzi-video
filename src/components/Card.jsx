@@ -1,5 +1,7 @@
 import React from 'react';
 import '../assets/styles/card.scss';
+import plus from '../assets/images/plus-icon.png';
+import play from '../assets/images/play-icon.png';
 
 function Card() {
   return (
@@ -14,12 +16,12 @@ function Card() {
           <div>
             <img
               className='carousel-item__details--img'
-              src='../assets/play-icon.png'
+              src={play}
               alt='Play Icon'
             />
             <img
               className='carousel-item__details--img'
-              src='../assets/plus-icon.png'
+              src={plus}
               alt='Plus Icon'
             />
           </div>
