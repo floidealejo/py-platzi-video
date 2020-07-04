@@ -12,12 +12,12 @@ function Home() {
     <>
       <Header />
       <Search />
-      <Categorie>
+      <Categorie title='Mi lista'>
         <CarruselCards>
           <Card />
         </CarruselCards>
       </Categorie>
-      <Categorie>
+      <Categorie title='Favoritos'>
         <CarruselCards>
           <Card />
         </CarruselCards>
