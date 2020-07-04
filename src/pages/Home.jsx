@@ -5,6 +5,7 @@ import CarruselCards from '../components/CarruselCards';
 import '../assets/styles/general.scss';
 import Categorie from '../components/Categorie';
 import Card from '../components/Card';
+import Footer from '../components/Footer';
 
 function Home() {
   return (
@@ -21,6 +22,7 @@ function Home() {
           <Card />
         </CarruselCards>
       </Categorie>
+      <Footer />
     </>
   );
 }
