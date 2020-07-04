@@ -1,14 +1,11 @@
 import React from 'react';
-import Card from './Card';
 import '../assets/styles/carruselCards.scss';
 
-function CarruselCards() {
+function CarruselCards({ children }) {
   return (
     <>
       <section className='carousel'>
-        <div className='carousel__container'>
-          <Card />
-        </div>
+        <div className='carousel__container'>{children}</div>
       </section>
     </>
   );
