@@ -1,4 +1,5 @@
 import React from 'react';
+import ProtoTypes from 'prop-types';
 import '../assets/styles/card.scss';
 import plus from '../assets/images/plus-icon.png';
 import play from '../assets/images/play-icon.png';
@@ -30,5 +31,11 @@ function Card({ id, cover, title, year, contentRating, duration }) {
     </>
   );
 }
-
+Card.protoTypes = {
+  cover: ProtoTypes.string,
+  title: ProtoTypes.string,
+  year: ProtoTypes.number,
+  contentRating: ProtoTypes.string,
+  duration: ProtoTypes.number,
+};
 export default Card;
