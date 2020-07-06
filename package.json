@@ -25,7 +25,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start-media": "live-server"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -44,6 +45,7 @@
   },
   "devDependencies": {
     "css-loader": "^3.6.0",
+    "live-server": "^1.2.1",
     "node-sass": "^4.14.1",
     "sass-loader": "^9.0.0"
   }
