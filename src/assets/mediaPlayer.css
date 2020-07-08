@@ -1,0 +1,24 @@
+.container {
+  display: grid;
+  grid-template-rows: 1fr 0fr 0fr;
+  justify-content: center;
+}
+.movie {
+  width: 70vw;
+  height: 70vh;
+}
+div {
+  display: grid;
+}
+button {
+  justify-self: center;
+  margin-top: 1.5em;
+}
+header {
+  background: peru;
+  margin-bottom: 1.5em;
+}
+
+body {
+  margin: 0;
+}
