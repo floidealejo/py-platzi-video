@@ -7,7 +7,10 @@ const video = document.querySelector('video');
 const button = document.querySelector('button[id="play"]');
 const button2 = document.querySelector('button[id="mute"]');
 
-const player = new MediaPlayer({ el: video, plugins: [new AutoPlay()] });
+const player = new MediaPlayer({
+  el: video,
+  plugins: [new AutoPlay()],
+});
 
 button.onclick = () => (video.paused ? player.Play() : player.Pause());
 button2.onclick = () => (video.muted ? player.UnMute() : player.Mute());
