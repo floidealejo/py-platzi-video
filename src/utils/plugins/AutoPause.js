@@ -2,6 +2,7 @@ class AutoPause {
   constructor() {
     this.threshold = 0.5;
     this.handleInterserction = this.handleInterserction.bind(this);
+    this.handleVisibilityChange = this.handleVisibilityChange.bind(this);
   }
 
   run(player) {
@@ -10,11 +11,21 @@ class AutoPause {
       threshold: this.threshold,
     });
     observer.observe(this.player.media);
+    document.addEventListener('visibilityChange', this.handleVisibilityChange);
   }
 
   handleInterserction(entries) {
     const entry = entries[0];
     const isVisible = entry.intersectionRatio >= this.threshold;
+    if (isVisible) {
+      this.player.play();
+    } else {
+      this.player.pause();
+    }
+  }
+
+  handleVisibilityChange() {
+    const isVisible = document.visibilityState === 'visible';
     if (isVisible) {
       this.player.play();
     } else {
