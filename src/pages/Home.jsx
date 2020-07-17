@@ -15,7 +15,7 @@ import Card from '../components/Card';
 import Footer from '../components/Footer';
 import useInitialState from '../hooks/useInitialState';
 
-const API = 'http://localhost:3001/initalState';
+const API = ' http://localhost:8080/initalState';
 const Home = () => {
   const [videos, categories] = useInitialState(API);
   if (videos.length === 0) {
