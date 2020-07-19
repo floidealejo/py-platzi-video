@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../assets/styles/formRegister.scss';
 
 const FormRegister = () => {
@@ -8,9 +9,10 @@ const FormRegister = () => {
         <input className='input' type='text' placeholder='Nombre' />
         <input className='input' type='text' placeholder='Correo' />
         <input className='input' type='password' placeholder='Contraseña' />
-        <button type='submit' className='button'>
+        {/* <button type='submit' ></button> */}
+        <Link to='/' className='button'>
           Registrarme
-        </button>
+        </Link>
       </form>
     </div>
   );
