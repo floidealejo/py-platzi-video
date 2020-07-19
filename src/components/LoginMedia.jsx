@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import googleIcon from '../assets/images/google-icon.png';
 import TwitterIcon from '../assets/images/twitter-icon.png';
 
@@ -8,14 +9,14 @@ const LoginMedia = () => {
   return (
     <>
       <section className='login__container--social-media'>
-        <a href>
+        <Link to='/'>
           <img src={googleIcon} alt={googleIcon} />
           Inicia sesión con Google
-        </a>
-        <a href>
+        </Link>
+        <Link to='/'>
           <img src={TwitterIcon} alt={TwitterIcon} />
           Inicia sesión con Twitter
-        </a>
+        </Link>
       </section>
     </>
   );
